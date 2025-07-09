@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Indian Innovations - Idea Submission</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f6f7;
+      padding: 20px;
+    }
+    .container {
+      max-width: 600px;
+      background: white;
+      padding: 20px;
+      border-radius: 10px;
+      margin: auto;
+      box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    }
+    input, textarea {
+      width: 100%;
+      margin: 10px 0;
+      padding: 10px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+    label {
+      font-weight: bold;
+    }
+    button {
+      background-color: #1e88e5;
+      color: white;
+      border: none;
+      padding: 12px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #1565c0;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <h2>Submit Your Innovative Idea</h2>
+    <form action="https://script.google.com/macros/s/YOUR_SCRIPT_ID/exec" method="post" enctype="multipart/form-data">
+      <label for="name">Full Name:</label>
+      <input type="text" name="name" required>
+
+      <label for="email">Email:</label>
+      <input type="email" name="email" required>
+
+      <label for="phone">Contact Number:</label>
+      <input type="tel" name="phone" required>
+
+      <label for="address">Address:</label>
+      <textarea name="address" rows="3" required></textarea>
+
+      <label for="idea">Describe Your Idea:</label>
+      <textarea name="idea" rows="5" required></textarea>
+
+      <label for="file">Upload Photo/Video/PDF:</label>
+      <input type="file" name="file" accept="image/*,video/*,application/pdf" required>
+
+      <button type="submit">Submit Idea</button>
+    </form>
+  </div>
+
+</body>
+</html>
